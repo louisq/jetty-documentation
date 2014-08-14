@@ -27,13 +27,13 @@
          xmlns:ns="http://docbook.org/ns/docbook">
   <title>Aliased Files and Symbolic links</title>
 
-  <para>Web applciations will often server static content from the file system
-  provided by the operating system running underneatth the JVM. However
+  <para>Web applications will often serve static content from the file system
+  provided by the operating system running underneath the JVM. However
   because file systems often implement multiple aliased names for the same
-  file, then security constraints and other servlet URI space mappings my
-  inadvertantly be bypassed by aliases.</para>
+  file, the security constraints and other servlet URI space mappings may
+  inadvertently be bypassed by aliases.</para>
 
-  <para>I key example of this is case insensitivety and 8.3 names implemented
+  <para>A key example of this is case insensitivety and 8.3 names implemented
   by the Windows File system. If a file within a webapplication called
   <code>/mysecretfile.txt</code> is protected by a security constraint on the
   URI <code> /mysecretfile.txt</code>, then a request to
